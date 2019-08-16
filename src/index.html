@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Daniel Wikander</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  
+  <div id ="me">
+    <div id ="metext">
+        <h1>
+            DANIEL WIKANDER   
+        </h1>
+        <p>
+        Hi, I'm a software developer.<br/>
+        This site is currently a work in progress.
+        Whilst I tidy this place up,
+        you can check out some of <a href="#dotfiles">my projects</a> or 
+        <a href="#contact" onclick="jumpContactBox();">get in touch</a> if you want to collaborate.
+        </p>
+    </div>
+  </div>
+      
+  <div id="arrow" onclick="location.href='#dotfiles';jumpContactBox();">
+        <svg id "svgarrow" width="220px" height="60" xml:space="preserve">
+        <polyline fill="none" stroke="#424242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+        points="10,0 100,40 190,0"/>
+        </svg>  
+  </div>
+
+
+  <div class="contentbox" id="dotfiles">
+    <h1>
+          .dotfiles
+    </h1>
+    <div class="box">
+      <div id="dots">
+        
+        <img src="img/i3desktopsmall.gif" alt="dotfiles" />
+      </div>
+    </div>
+  </div>
+
+  <div class="contentbox" id="ncursnek">
+    <h1>
+          ncursnek
+    </h1>
+    <div class="box">
+      <div id="dots">
+        <img src="https://raw.githubusercontent.com/danielwikander/ncursnek/master/screenshots/ncursnek2.gif" alt="ncursnek" />
+
+        <p>
+            My linux dotfiles. This repo is in a neverending state of change and experimentation, so use these at your own risk. 
+            The files can be installed and updated using git and GNU stow.
+            It should work on any arch based distribution.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentbox">
+    <div id="contact">
+        <h2 id="contactheader">
+            Get in touch:
+        </h2>
+        daniel.wikander@gmail.com<br/>
+        <a href="https://github.com/danielwikander/">github</a><br/>
+        <a href="https://www.linkedin.com/in/daniel-wikander-77b935173/">linkedin</a><br/>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
+
