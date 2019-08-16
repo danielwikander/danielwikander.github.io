@@ -1,0 +1,213 @@
+:root {
+    --pink: rgb(240, 200, 204);
+    --grey: #383838;
+    --grey2: #424242;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: "me" "arrow" "dotfiles" "ncursnek" "contact";
+    color: var(--grey22);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    background: linear-gradient( to bottom, var(--pink) 0%, var(--pink)100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 6px 7px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 6px 50px;
+}
+
+#me {
+    grid-area: me;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#metext {
+    width: 800px;
+    height: 300px;
+}
+
+#metext h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#metext p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 5px;
+    line-height: 1.3em;
+}
+
+#arrow {
+    display: flex;
+    grid-area: arrow;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+#arrow:hover polyline {
+    stroke-width: 3;
+    stroke: var(--pink);
+    transition: all 500ms ease-in-out;
+}
+
+#arrow:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+}
+
+
+#dotfiles {
+    grid-area: dotfiles;
+}
+
+#ncursnek {
+    grid-area: ncursnek;
+}
+
+#contact {
+    grid-area: contact;
+    padding-bottom: 200px;
+    line-height: 1.4em;
+}
+
+#contact h2 { 
+    margin-top:75px;
+    margin-bottom:5px;
+}
+
+.boximage { 
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.box {
+    background-color: #f3f3f3;
+    display:flex;
+    flex-direction: row;
+    border-radius: 2px 2px 2px 2px;
+    width: 1000px;
+    line-height: 1.4em;
+}
+
+.box p {
+    padding: 40px;
+}
+
+.contentbox:hover .contenttitle {
+    background-size: 6px 50px;
+}
+
+.contentbox {
+    margin: 0 auto;
+}
+
+.contentbox h1 {
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+@-webkit-keyframes jump {
+  0%{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+  20%{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+  40%{
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+  }
+  50%{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+  60%{
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+  }
+  80%{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+  100%{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
