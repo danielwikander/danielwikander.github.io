@@ -218,10 +218,29 @@ a:hover {
 
 
 /* For mobile phones: */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 975px) {
     .box {
-       flex-direction: column;
-       width: 400px;
+        width: auto;
+       flex-direction: row;
+    }
+    .box p {
+        padding:20px;
+    }
+    .contentbox {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .box {
+       flex-direction: column;
+       width: 350px;
+    }
+    .contentbox h1 {
+        font-size: 28px;
+    }
+    .boximage { 
+        width: 350px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
