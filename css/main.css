@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     display: grid;
     grid-gap: 25px;
     grid-template-areas: "me" "arrow" "dotfiles" "ncursnek" "contact";
