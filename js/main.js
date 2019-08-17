@@ -3,7 +3,8 @@ function jumpContactBox() {
 }
 
 function fadeArrow() {
-    document.getElementById("arrow").style.animation = "fadeout 1s ease 0.5s forwards";
+    var arrow = document.getElementById("arrow");
+    arrow.style.animation = "fadeout 1s ease 0.5s forwards";
 }
 
 

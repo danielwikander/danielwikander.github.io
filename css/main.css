@@ -48,6 +48,8 @@ a:hover {
     text-align: center;
     font-size: 50px;
     margin-bottom: 10px;
+    font-weight: 200;
+    letter-spacing: .4rem;
 }
 
 #metext p {
@@ -121,6 +123,7 @@ a:hover {
 
 .contentbox:hover .contenttitle {
     background-size: 6px 50px;
+    color: white;
 }
 
 .contentbox {
