@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-gap: 25px;
-    grid-template-areas: "me" "arrow" "dotfiles" "ncursnek" "contact";
+    grid-template-areas: "me" "arrow" "shapeshop" "dotfiles" "ncursnek" "contact";
     color: var(--grey22);
     font-family: 'Montserrat', sans-serif;
 }
@@ -83,6 +83,9 @@ a:hover {
     transition: all 100ms ease-in-out;
 }
 
+#shapeshop {
+    grid-area: shapeshop;
+}
 
 #dotfiles {
     grid-area: dotfiles;
