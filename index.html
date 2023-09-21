@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="description" content="Daniel Wikander, software developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Daniel Wikander</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body onscroll="fadeArrow()">
-  
-  <div id ="me">
-    <div id ="metext">
-        <h1>
-            DANIEL WIKANDER   
-        </h1>
-        <p>
-        Hi, I'm a software developer.<br/>
-        This site is currently a work in progress.
-        Whilst I tidy this place up,
-        you can check out some of <a href="#shapeshop">my projects</a> or 
-        <a href="#contact" onclick="jumpContactBox();">get in touch</a> if you want to collaborate.
-        </p>
+</head>
+
+<body onscroll="fadeArrow()">
+
+    <div id="me">
+        <div id="metext">
+            <h1>
+                DANIEL WIKANDER
+            </h1>
+            <p>
+                Hi, I'm a software developer.<br />
+                This site is currently a work in progress.
+                Whilst I tidy this place up,
+                you can check out some of <a href="#shapeshop">my projects</a> or
+                <a href="#contact" onclick="jumpContactBox();">get in touch</a> if you want to collaborate.
+            </p>
+        </div>
     </div>
-  </div>
-      
-  <div id="arrow" onclick="location.href='#shapeshop';jumpContactBox();">
+
+    <div id="arrow" onclick="location.href='#shapeshop';jumpContactBox();">
         <svg id="svgarrow" width="220px" height="60" xml:space="preserve">
-        <polyline fill="none" stroke="#424242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-        points="10,0 100,40 190,0"/>
-        </svg>  
-  </div>
-
-  <div class="contentbox" id="shapeshop">
-    <h1>
-        <a class="contenttitle" href="https://shapeshop.vercel.app/">ShapeShop</a>
-    </h1>
-    <div class="box">
-        <a href="https://shapeshop.vercel.app/">
-        <img class ="boximage" src="img/shapeshop.png" alt="shapeshop" />
-    </a>
-        <p>
-            A 3D webshop for all your geometric needs!
-            Built in <a href="https://www.typescriptlang.org/">Typescript</a> using <a href="https://react.dev/">React</a> and <a href="https://github.com/mrdoob/three.js/">Three.js</a>.
-        </p>
+            <polyline fill="none" stroke="#424242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                points="10,0 100,40 190,0" />
+        </svg>
     </div>
-  </div>
-  
-  <div class="contentbox" id="dotfiles">
-    <h1>
-        <a class="contenttitle" href="https://github.com/danielwikander/dotfilesstow">.dotfiles</a>
-    </h1>
-    <div class="box">
-        <a href="https://github.com/danielwikander/dotfilesstow">
-        <img class ="boximage" src="img/i3desktopsmall.gif" alt="dotfiles" />
-    </a>
-        <p>
-            My linux dotfiles. This repo is in a permanent state of change and experimentation. 
-            The files can be installed and updated using git and <a href="https://www.gnu.org/software/stow/">GNU stow</a>.
-            They should work on any arch based distribution.
-        </p>
+
+    <div class="contentbox" id="shapeshop">
+        <h1>
+            <a class="contenttitle" href="https://shapeshop.vercel.app/">ShapeShop</a>
+        </h1>
+        <div class="box">
+            <a href="https://shapeshop.vercel.app/">
+                <img class="boximage" src="img/shapeshop.png" alt="shapeshop" />
+            </a>
+            <p>
+                A proof-of-concept webshop where users can browse geometric shapes in a 3D environment.
+                Built in <a href="https://www.typescriptlang.org/">Typescript</a> using <a
+                    href="https://react.dev/">React</a> and <a href="https://github.com/mrdoob/three.js/">Three.js</a>.
+            </p>
+        </div>
     </div>
-  </div>
 
-  <div class="contentbox" id="cursnek">
-    <h1>
-    <a class="contenttitle" href="https://github.com/danielwikander/cursnek">
-          cursnek
-    </a>
-    </h1>
-    <div class="box">
-    <a href="https://github.com/danielwikander/cursnek">
-        <img class="boximage" src="https://raw.githubusercontent.com/danielwikander/cursnek/master/screenshots/cursnek2.gif" alt="cursnek" />
-    </a>
-
-        <p>
-            Snake in your terminal! Written in C++ with the <a href="https://www.gnu.org/software/stow/">ncurses library</a>.
-        </p>
+    <div class="contentbox" id="dotfiles">
+        <h1>
+            <a class="contenttitle" href="https://github.com/danielwikander/dotfilesstow">.dotfiles</a>
+        </h1>
+        <div class="box">
+            <a href="https://github.com/danielwikander/dotfilesstow">
+                <img class="boximage" src="img/i3desktopsmall.gif" alt="dotfiles" />
+            </a>
+            <p>
+                My linux dotfiles. This repo is in a permanent state of change and experimentation.
+                The files can be installed and updated using git and <a href="https://www.gnu.org/software/stow/">GNU
+                    stow</a>.
+                They should work on any arch based distribution.
+            </p>
+        </div>
     </div>
-  </div>
 
-  <div class="contentbox" id="apm">
-    <h1>
-    <a class="contenttitle"href="https://github.com/danielwikander/Arduino-Plant-Monitor">
-          arduino plant monitor
-    </a>
-    </h1>
-    <div class="box">
-    <a href="https://github.com/danielwikander/Arduino-Plant-Monitor">
-        <img class="boximage" src="img/apm.png" alt="arduino plant monitor" />
-    </a>
+    <div class="contentbox" id="cursnek">
+        <h1>
+            <a class="contenttitle" href="https://github.com/danielwikander/cursnek">
+                cursnek
+            </a>
+        </h1>
+        <div class="box">
+            <a href="https://github.com/danielwikander/cursnek">
+                <img class="boximage"
+                    src="https://raw.githubusercontent.com/danielwikander/cursnek/master/screenshots/cursnek2.gif"
+                    alt="cursnek" />
+            </a>
 
-        <p>
-            Plant monitoring system featuring an arduino uno equipped with sensors. 
-            Data is stored in a postgre-sql db and presented with a JavaFX application. 
-            Users can log in and save multiple arduinos for monitoring.
-            The system was a collaborative project between four students at Malmö University.
-        </p>
+            <p>
+                Snake in your terminal! Written in C++ with the <a href="https://www.gnu.org/software/stow/">ncurses
+                    library</a>.
+            </p>
+        </div>
     </div>
-  </div>
 
-  <div class="contentbox">
-    <div id="contact">
-        <h2 id="contactheader">
-            Get in touch:
-        </h2>
-        daniel.wikander@gmail.com<br/>
-        <a href="https://github.com/danielwikander/">github</a> -  
-        <a href="https://www.linkedin.com/in/daniel-wikander-77b935173/">linkedin</a><br/>
+    <div class="contentbox" id="apm">
+        <h1>
+            <a class="contenttitle" href="https://github.com/danielwikander/Arduino-Plant-Monitor">
+                arduino plant monitor
+            </a>
+        </h1>
+        <div class="box">
+            <a href="https://github.com/danielwikander/Arduino-Plant-Monitor">
+                <img class="boximage" src="img/apm.png" alt="arduino plant monitor" />
+            </a>
+
+            <p>
+                Plant monitoring system featuring an arduino uno equipped with sensors.
+                Data is stored in a postgre-sql db and presented with a JavaFX application.
+                Users can log in and save multiple arduinos for monitoring.
+                The system was a collaborative project between four students at Malmö University.
+            </p>
+        </div>
     </div>
-  </div>
 
-  <script src="js/main.js"></script>
-  </body>
+    <div class="contentbox">
+        <div id="contact">
+            <h2 id="contactheader">
+                Get in touch:
+            </h2>
+            daniel.wikander@gmail.com<br />
+            <a href="https://github.com/danielwikander/">github</a> -
+            <a href="https://www.linkedin.com/in/daniel-wikander-77b935173/">linkedin</a><br />
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>
-
